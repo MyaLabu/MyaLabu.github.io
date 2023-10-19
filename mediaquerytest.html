@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query Test</title>
     <style>
-        .topnav {overflow: hidden; background: #333;}
+        .topnav {overflow: hidden;
+            background: #333;
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: fixed;
+            z-index:999;}
         .toponav a { 
             float: left;
             display: block;
@@ -23,16 +29,26 @@
             body {background: lightblue;}
         }
         .topnav a:hover { background: #ddd; color: black;}
+        #top { padding-top: 30vh;}
     </style>
 </head>
 <body>
+    <div id="top">
     <h1>Heres my navbar</h1>
     <p>Media queries allow for responsive resizing of elements based on screen width (usally).</p>
-
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis felis vulputate lorem tincidunt, in accumsan magna pellentesque. Etiam dapibus eros nec ex tincidunt commodo sit amet sollicitudin tellus. Pellentesque venenatis turpis rutrum lacus suscipit eleifend. Proin in pulvinar massa. Curabitur id mi tristique, consequat purus a, pulvinar lacus. Etiam pulvinar id erat malesuada accumsan. Duis viverra ante metus, efficitur rutrum ante tristique et.
+        Curabitur sit amet urna orci. Praesent tristique sapien non quam rutrum luctus. Cras congue sodales mauris, quis laoreet felis iaculis vel. Pellentesque lacinia sed diam nec lobortis. Cras pulvinar nisi a dolor commodo, sit amet tempor erat accumsan. Phasellus ullamcorper vitae mi nec euismod. Vestibulum non aliquam elit. Nam pellentesque sem sit amet imperdiet luctus. Suspendisse imperdiet laoreet mollis.
+        In a turpis odio. Nullam ullamcorper risus lectus, eget auctor diam ullamcorper id. Donec bibendum sed leo vel pretium. Sed pretium volutpat neque, nec sollicitudin tellus cursus quis. Mauris hendrerit purus dui, nec dignissim ligula congue quis. Nunc sed odio eu leo suscipit bibendum vel at dolor. Quisque tristique enim at sagittis accumsan. Curabitur pellentesque erat id turpis sagittis tristique. Curabitur vitae sapien eget erat commodo finibus quis ac tortor.
+        Nunc placerat dolor eu porttitor fermentum. Praesent tempus ex vitae pellentesque vulputate. Vestibulum ut turpis ac arcu elementum hendrerit vel sed nibh. Aenean sollicitudin ipsum consequat lacus viverra mattis. Sed at sem ultrices, cursus nunc in, placerat leo. Quisque diam risus, congue a nibh eget, semper suscipit orci. Suspendisse potenti. Donec eros diam, posuere nec magna eu, lacinia placerat elit. Fusce neque libero, mollis id justo non, semper congue ante. Phasellus tincidunt magna vitae ante commodo aliquet.
+        Curabitur at velit est. Suspendisse commodo nunc metus, vel commodo nisi efficitur at. Phasellus vehicula, ante sed rutrum finibus, quam mauris hendrerit nisi, at pharetra lacus nibh nec urna. Sed vel enim non elit aliquam imperdiet. Donec nec iaculis libero. Nulla diam velit, maximus sed porttitor vitae, blandit vitae sem. Vestibulum efficitur nulla a molestie venenatis. Vestibulum sed ipsum tincidunt leo molestie hendrerit.</p>
+    </div>
     <div class="topnav">
+        <a href="#top">Top</a>
+        <a href="#bot">Bottom</a>
         <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+    </div>
+    <div id="bot">
+        <b>Heres the bottom of the page!</b>
     </div>
 </body>
 </html>
