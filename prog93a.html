@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog93a</title>
+</head>
+<body>
+    <label for="Kilowatts">Killowatts Used</label>
+    <input type="number" id="Kilowatts" name="Kilowatts">
+    <button onclick="calc()">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function price() {
+            var price = Kilowatts * 4.27;
+            var subcharge = price / 10% ;
+            var total = subcharge / 3%;
+
+            if ( late ) {
+                total / 4%;
+            }
+
+            var p = document.getElementById("out").value;
+        }
+    </script>
+</body>
+</html>
