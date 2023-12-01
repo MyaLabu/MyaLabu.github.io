@@ -15,11 +15,11 @@
     <script>
         function price() {
             var price = Kilowatts * 4.27;
-            var subcharge = price / 10% ;
-            var total = subcharge / 3%;
+            var subcharge = price * 0.010 ;
+            var total = subcharge * 0.03;
 
             if ( late ) {
-                total / 4%;
+                total * 0.04;
             }
 
             var p = document.getElementById("out").value;
