@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">This is another paragraph</p>
+    <p>Input feild
+        <input type="text" id="test3" value="placeholder"></p>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+    <button id="btn4">Append Text</button>
+
+    <p id="gtest">Here's some <b>Bold</b> text in a paragraph</p>
+    <button id="gtbn1">Show Text</button>
+    <button id="gtbn1">Show HTML</button>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <button id="lbtn">Append List Item</button>
+
+    <div style="background: green; width: 100px; height: 100px; position: absolute"></div>
+    <button id="atbn">Run animation</button>
+
+    <script>
+        $(document).ready(function(){
+            // all your code goes into document.ready
+            $("#btn1").click(function(){
+                $("#test1").text("Hello, world!");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Hello, world!</b>");
+            });
+            $("#btn1").click(function(){
+                $("#test3").val("Abc123");
+            });
+            $("#gbtn1").click(function(){
+                alert("Text: " + $("#gtest").text());
+            });
+            $("#gbtn2").click(function(){
+                alert("HTML: " + $ ("#gtest").html());
+            });
+
+            $("#btn4").click(function(){
+                $("p").append(" <b>Appended Text</b>");
+            });
+            $("lbtn").click(function(){
+                $("ol").append("<li>Appended Item</li>");
+            });
+
+            $("#abtn").click(function(){
+                $("div").animate({left: '250px'});
+                $("div").fadeOut(3000); //ms
+            });
+        });
+    </script>
+</body>
+</html>
